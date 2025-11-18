@@ -1,24 +1,21 @@
-playingGame()
+hankingPlaythroughCalc("Sonic", 200)
 
-// Variavel da função sendo chamada
-let resultRanking = playingGame(22, 11)
-console.log()
-
-// fdsfdsfdsfsf
-function playingGame(quantVitorias, quantDerrotas) {
-    let resultRanking = quantVitorias - quantDerrotas
-    return resultRanking
-    calcRanking() // Chamando a função de Calcular Ranking
-}
-
-// dsadsdasdsadasd
-function calcRanking() {
-
-    // dsadsadsad
-    if(resultRanking < 10) {
-        // console.log("O Herói " + nomePersonagem + ", está no nivel " + nivelXP + " 'FERRO'")
-        console.log("O Heroi " + nomePersonagem +  ", tem saldo: x e está no nível " + nivelXP + " 'Ferro'")
-    } else if(resultRanking >= 11 && resultRanking <= 20) {
-        console.log("O Heroi " + nomePersonagem +  ", tem saldo: x e está no nível " + nivelXP + " 'Bronze'")
+// Função que calcula o número de vitórias e derrotas de nosso heroi
+function hankingPlaythroughCalc(nomeHeroi, saldoVitorias) {
+    if(saldoVitorias < 10) {
+        // console.log("O Herói " + nomeHeroi +", tem de saldo: " + saldoVitorias + " e está no nível " + nivelXP + "(Ferro)")
+        console.log("O Herói " + nomeHeroi +", tem de saldo: " + saldoVitorias + " e está no nível 'Ferro'")
+    } else if(saldoVitorias >=11 && saldoVitorias <=20) {
+        console.log("O Herói " + nomeHeroi +", tem de saldo: " + saldoVitorias + " e está no nível 'Bronze'")
+    } else if(saldoVitorias >=21 && saldoVitorias <=50) {
+        console.log("O Herói " + nomeHeroi +", tem de saldo: " + saldoVitorias + " e está no nível 'Prata'")
+    } else if(saldoVitorias >=51 && saldoVitorias <=80) {
+        console.log("O Herói " + nomeHeroi +", tem de saldo: " + saldoVitorias + " e está no nível 'Ouro'")
+    } else if(saldoVitorias >=81 && saldoVitorias <=90) {
+        console.log("O Herói " + nomeHeroi +", tem de saldo: " + saldoVitorias + " e está no nível 'Diamante'")
+    } else if(saldoVitorias >=91 && saldoVitorias <=100) {
+        console.log("O Herói " + nomeHeroi +", tem de saldo: " + saldoVitorias + " e está no nível 'Lendário'")
+    } else {
+        console.log("O Herói " + nomeHeroi +", tem de saldo: " + saldoVitorias + " e está no nível 'Imortal'")
     }
 }
